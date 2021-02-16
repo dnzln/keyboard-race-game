@@ -1,0 +1,95 @@
+#game-page {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 50px;
+}
+
+.sidebar-block {
+  flex: 0 1 30%;
+}
+
+.room-info-block {
+  padding: 50px 0;
+}
+
+#ready-btn,
+#not-ready-btn,
+#disconnect-btn {
+  padding: 10px 20px;
+  background-color: var(--main-button-background-color);
+  border: 1px solid var(--main-button-border-color);
+}
+
+#ready-btn:hover,
+#not-ready-btn:hover,
+#disconnect-btn:hover {
+  background-color: rgb(233, 231, 231);
+}
+
+.main-block {
+  flex: 0 1 65%;
+}
+
+.game-block {
+  border: 2px solid grey;
+  width: 600px;
+  height: 500px;
+  position: relative;
+}
+
+.player-indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: rgb(194, 67, 67);
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.ready {
+  background-color: rgb(14, 212, 80);
+}
+
+.player-pointer {
+  margin-left: 10px;
+}
+
+.player-progressbar {
+  height: 20px;
+  width: 100%;
+  margin: 10px 0;
+  border: 1px solid grey;
+}
+
+.player-progressbar-content {
+  height: 100%;
+  width: 0%;
+  background-color: rgb(14, 212, 80);
+}
+
+.game-text-done {
+  background-color: rgb(14, 212, 80);
+  white-space: pre;
+  font-size: 20px;
+}
+
+.game-text-left {
+  white-space: pre;
+  font-size: 20px;
+}
+
+.game-text-left::first-letter {
+  border-bottom: 1px solid rgb(14, 212, 80);
+}
+
+.game-timer {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.finisher {
+  background-color: chartreuse;
+}
